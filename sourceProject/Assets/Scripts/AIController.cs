@@ -18,8 +18,9 @@ public class AIController : MonoBehaviour {
     public float maxWanderTime;
     public float afterHitDelay;
     public float interactionRadius;
+    public float updateDistance;
     public int baseDamage;
-    public int chargeMultiplier;
+    public float chargeMultiplier;
     public int maxHealth;
     public int currentHealth;
     public float baseRespawnDelay;
@@ -57,6 +58,7 @@ public class AIController : MonoBehaviour {
     private bool isInteracting = false;
     private bool isWandering = false;
     private bool justInteracted = false;
+    private bool justPlayed = false;
     private List<GameObject> targets;
 
     private float stepDelay = .25f;
@@ -105,104 +107,119 @@ public class AIController : MonoBehaviour {
 	void Update () {
 
         //get player again in case we had to switch
-        player = GameObject.FindObjectOfType<PlayerController>();
         if (player == null)
         {
-            Debug.Log("AIScript: Player object not found!");
-        }
-
-        //decrease general timers
-        if (attackDelayTimer >= 0)
-        {
-            attackDelayTimer -= Time.deltaTime;
-        }
-        if (chargeTimer >= 0)
-        {
-            chargeTimer -= Time.deltaTime;
-        }
-        if (attackInstanceTimer >= 0)
-        {
-            attackInstanceTimer -= Time.deltaTime;
-        }
-        if (damageTimer >= 0)
-        {
-            damageTimer -= Time.deltaTime;
-        }
-        if(waitTimer >= 0)
-        {
-            waitTimer -= Time.deltaTime;
-        }
-        if(waitDelayTimer >= 0)
-        {
-            waitDelayTimer -= Time.deltaTime;
-        }
-
-        if (currentHealth > 0)
-        {
-            if (isPlayerControlled)
+            player = GameObject.FindObjectOfType<PlayerController>();
+            if (player == null)
             {
-                //dirInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-                GetInput();
+                Debug.Log("AIScript: Player object not found!");
             }
-            else //control by ai
+        }
+
+        if (Vector2.Distance(player.transform.position, transform.position) < updateDistance) //don't even worry about distant enemies
+        {
+
+            //decrease general timers
+            if (attackDelayTimer >= 0)
             {
-                if (waitTimer <= 0)
+                attackDelayTimer -= Time.deltaTime;
+            }
+            if (chargeTimer >= 0)
+            {
+                chargeTimer -= Time.deltaTime;
+            }
+            if (attackInstanceTimer >= 0)
+            {
+                attackInstanceTimer -= Time.deltaTime;
+            }
+            if (damageTimer >= 0)
+            {
+                damageTimer -= Time.deltaTime;
+            }
+            if (waitTimer >= 0)
+            {
+                waitTimer -= Time.deltaTime;
+            }
+            if (waitDelayTimer >= 0)
+            {
+                waitDelayTimer -= Time.deltaTime;
+            }
+
+            if (currentHealth > 0)
+            {
+                if (isPlayerControlled)
                 {
-                    SetInput();
+                    //dirInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+                    GetInput();
                 }
-                else //still waiting, set everything to no input
+                else //control by ai
                 {
-                    dirInput = Vector2.zero;
-                    isAttacking = false;
-                    isInteracting = false;
+                    if (waitTimer <= 0)
+                    {
+                        SetInput();
+                    }
+                    else //still waiting, set everything to no input
+                    {
+                        dirInput = Vector2.zero;
+                        isAttacking = false;
+                        isInteracting = false;
+                    }
                 }
-            }
-            
-            //handle timers that should not be updated when dead.
-            if (stepTimer >= 0)
-            {
-                stepTimer -= Time.deltaTime;
-            }
-            else if(myAnim.GetBool("isRunning"))
-            {
-                audioMan.playSFX("step", transform.position);
-                stepTimer = stepDelay + Random.Range(-0.1f, 0.1f);
-            }
-            if (flashTimer >= 0)
-            {
-                flashTimer -= Time.deltaTime;
-            }
-            else if (damageTimer >= 0) //flash timer ran out, still invuln so filp
-            {
-                flashTimer = flashDelay;
-                mySprite.enabled = !mySprite.enabled;
-            }
-            else //no more invuln, reset
-            {
-                mySprite.enabled = true;
-            }
 
-            if (Time.timeScale > 0) //time is passing so handle stuff.
-            {
-                HandleMovement();
-                HandleInteract();
-                HandleAttack();
+                //handle timers that should not be updated when dead.
+                if (stepTimer >= 0)
+                {
+                    stepTimer -= Time.deltaTime;
+                }
+                else if (myAnim.GetBool("isRunning"))
+                {
+                    audioMan.playSFX("step", transform.position);
+                    stepTimer = stepDelay + Random.Range(-0.1f, 0.1f);
+                }
+                if (flashTimer >= 0)
+                {
+                    flashTimer -= Time.deltaTime;
+                }
+                else if (damageTimer >= 0) //flash timer ran out, still invuln so filp
+                {
+                    flashTimer = flashDelay;
+                    mySprite.enabled = !mySprite.enabled;
+                }
+                else //no more invuln, reset
+                {
+                    mySprite.enabled = true;
+                }
 
-            }
-        }
-        else
-        {
-            if(respawnTimer>0)
-            {
-                respawnTimer -= Time.deltaTime; //wait...
+                if (Time.timeScale > 0) //time is passing so handle stuff.
+                {
+                    HandleMovement();
+                    HandleInteract();
+                    HandleAttack();
+
+                }
             }
             else
             {
-                myAnim.SetBool("isDying", false); //RISE
-            }
+                if (respawnTimer > 0)
+                {
+                    respawnTimer -= Time.deltaTime; //wait...
+                    justPlayed = false;
+                }
+                else
+                {
+                    myAnim.SetBool("isDying", false); //RISE
 
-            //make sure the bodies don't slide around, good for a laugh though
-            myRB2.velocity = Vector2.zero;
+                    if (!justPlayed)
+                    {
+                        //ploy noise
+                        audioMan.playSFX("getUp", transform.position);
+                        justPlayed = true;
+                    }
+                }
+
+                //make sure the bodies don't slide around, good for a laugh though
+                myRB2.velocity = Vector2.zero;
+            }
         }
 	}
 
@@ -518,7 +535,7 @@ public class AIController : MonoBehaviour {
                 }
                 else //charged attack
                 {
-                    exp.damage = baseDamage * chargeMultiplier;
+                    exp.damage = Mathf.RoundToInt(baseDamage * chargeMultiplier);
                 }
                 exp.Eval();
             }
@@ -547,7 +564,7 @@ public class AIController : MonoBehaviour {
                 }
                 else //charged attack
                 {
-                    pb.damage = baseDamage * chargeMultiplier;
+                    pb.damage = Mathf.RoundToInt(baseDamage * chargeMultiplier);
                     pb.init(attackDirection * arrowSpeed * chargeMultiplier);
                 }
             }
@@ -635,6 +652,9 @@ public class AIController : MonoBehaviour {
             {
                 child.tag = tag;
             }
+
+            //ploy noise
+            audioMan.playSFX("getUp", transform.position);
         }
     }
 

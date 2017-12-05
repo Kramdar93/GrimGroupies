@@ -8,15 +8,7 @@ public class PowerUpBehavior : MonoBehaviour {
     public GameObject newPlayerObj;
     public GameObject replaceWith;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private Vector3 initPosition;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -28,6 +20,10 @@ public class PowerUpBehavior : MonoBehaviour {
             AIController pcai = pc.GetComponentInParent<AIController>();
             pcai.maxHealth += healthIncrease;
             pcai.currentHealth += heal;
+            if(pcai.currentHealth > pcai.maxHealth)
+            {
+                pcai.currentHealth = pcai.maxHealth; // clamp health to max.
+            }
 
             if(newPlayerObj != null)
             {

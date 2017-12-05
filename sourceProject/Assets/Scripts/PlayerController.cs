@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
     public float controlBufferTimeLength;
     public float reanimateRadius;
     public GameObject[] hearts;
+    public int objectives = 0;
+    public GameObject endScreen;
 
     public List<InputHistoryEntry> controlHistory; //see declaration below
 
@@ -28,6 +30,8 @@ public class PlayerController : MonoBehaviour {
     //private variables
     //private float attackTimer;
     private bool justPaused = false;
+    private bool justPausedByAttack = false;
+    private bool done = false;
     private int lastHealth = 0;
 
     public struct InputHistoryEntry
@@ -119,13 +123,13 @@ public class PlayerController : MonoBehaviour {
 
             //log controller input
             float attackInput = 0;
-            if(Input.GetAxisRaw("Attack") > 0.1f && !justPaused)
+            if (Input.GetAxisRaw("Attack") > 0.1f && !justPausedByAttack)
             {
                 attackInput = 1;
             }
-            else if (Input.GetAxisRaw("Attack") < 0.1f && justPaused)
+            else if (Input.GetAxisRaw("Attack") < 0.1f && justPausedByAttack)
             {
-                justPaused = false;
+                justPausedByAttack = false;
             }
             controlHistory.Insert(0, new InputHistoryEntry(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), attackInput, Input.GetAxisRaw("Interact")));
 
@@ -138,6 +142,10 @@ public class PlayerController : MonoBehaviour {
         else
         {
             //pause menu controls, quick and dirty
+            if(done && Input.GetAxisRaw("Attack") > 0.1f)
+            {
+                Application.Quit();
+            }
             Animator cursor = cameraTarget.GetComponentInChildren<Animator>();
             if(Input.GetAxisRaw("Vertical") > 0.1f)
             {
@@ -170,7 +178,7 @@ public class PlayerController : MonoBehaviour {
                     Time.timeScale = 1;
                     TogglePause(false);
                     audioMan.playSFX("ready", transform.position);
-                    justPaused = true;
+                    justPausedByAttack = true;
                 }
                 else //lower option: quit
                 {
@@ -237,6 +245,13 @@ public class PlayerController : MonoBehaviour {
         {
             sr.enabled = show;
         }
+    }
+
+    public void showEnd()
+    {
+        Time.timeScale = 0;
+        Instantiate(endScreen, transform.position, Quaternion.identity);
+        done = true;
     }
 
     //unused, let ai of player character query the control history.
