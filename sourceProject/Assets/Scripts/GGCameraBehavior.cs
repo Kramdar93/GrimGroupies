@@ -23,6 +23,8 @@ public class GGCameraBehavior : MonoBehaviour {
         backgroundCamera.clearFlags = CameraClearFlags.SolidColor;
         backgroundCamera.cullingMask = 0; //only show the letterbox color
         backgroundCamera.depth = int.MinValue;  //render everything on top of it.
+        //make it a child so it persists
+        backgroundCamera.transform.parent = transform;
 
         SetLetterbox();
     }

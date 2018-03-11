@@ -6,8 +6,9 @@ public class PlayerController : MonoBehaviour {
 
     public float controlBufferTimeLength;
     public float reanimateRadius;
+    public float respawnDelay;
     public GameObject[] hearts;
-    public int objectives = 0;
+    public int[] objectives = {0};
     public GameObject endScreen;
 
     public List<InputHistoryEntry> controlHistory; //see declaration below
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour {
     public GameObject heartStart;
     public GameObject cameraTarget;
 
+    public int lastSpawnID = 0;
+
     //references for others
     private SimpleTextPopper textPopper;
     private AudioManager audioMan;
@@ -32,7 +35,11 @@ public class PlayerController : MonoBehaviour {
     private bool justPaused = false;
     private bool justPausedByAttack = false;
     private bool done = false;
+    private bool justDied = true;
     private int lastHealth = 0;
+    private float respawnTimer = 0;
+
+    private Dictionary<string, Dictionary<int, bool>> InteractedItems;
 
     public struct InputHistoryEntry
     {
@@ -69,9 +76,19 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    //onEnable runs just after awake
+    void OnEnable()
+    {
+        //make sure our doormap is initiated.
+        InteractedItems = new Dictionary<string, Dictionary<int, bool>>();
+
+        //add delegate
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
 	// Use this for initialization
 	void Start () {
-        
+        DontDestroyOnLoad(transform.root);
 
         textPopper = GameObject.Find("TextPopper").GetComponent<SimpleTextPopper>();
         audioMan = GameObject.FindObjectOfType<AudioManager>();
@@ -88,10 +105,23 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         myAI = GetComponentInParent<AIController>();
 
+        //update timers
+        if(respawnTimer >= 0)
+        {
+            respawnTimer -= Time.deltaTime;
+        }
+
         //check health
         if(lastHealth != myAI.currentHealth)
         {
             updateHealth();
+        }
+
+        //set respawn timer
+        if (myAI.currentHealth <= 0 && justDied)
+        {
+            respawnTimer = respawnDelay;
+            justDied = false;
         }
 
         //check pause
@@ -132,6 +162,12 @@ public class PlayerController : MonoBehaviour {
                 justPausedByAttack = false;
             }
             controlHistory.Insert(0, new InputHistoryEntry(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), attackInput, Input.GetAxisRaw("Interact")));
+
+            //check for respawn quickening
+            if(myAI.currentHealth <=0 && (attackInput > 0 || Input.GetAxisRaw("Interact") > 0) && respawnTimer <= 0)
+            {
+                myAI.quickenRespawn();
+            }
 
             //limit history length
             if (Time.time - controlHistory[controlHistory.Count - 1].time > controlBufferTimeLength) // last entry is beyond point we care
@@ -207,6 +243,7 @@ public class PlayerController : MonoBehaviour {
                     }
                 }
             }
+            justDied = true;
         }
     }
 
@@ -252,6 +289,81 @@ public class PlayerController : MonoBehaviour {
         Time.timeScale = 0;
         Instantiate(endScreen, transform.position, Quaternion.identity);
         done = true;
+    }
+
+    void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode sceneMode)
+    {
+        //reposition to last important interaction. if an object is deemed important, then set lastspawnid in that script
+        //eg level transitions, weapon pickups, bonepiles
+        AutoID[] spoints = GameObject.FindObjectsOfType<AutoID>();
+        foreach(AutoID aid in spoints)
+        {
+            if(lastSpawnID == aid.id)
+            {
+                transform.root.position = aid.transform.position;
+                break;
+            }
+        }
+
+        if (InteractedItems.ContainsKey(scene.name)) //we have a record for this area
+        {
+            //get dictionary for this area 
+            Dictionary<int, bool> switchStates = InteractedItems[scene.name];
+
+            //get all doorswitches
+            DoorSwitchBehavior[] switchObjs = GameObject.FindObjectsOfType<DoorSwitchBehavior>();
+            foreach(DoorSwitchBehavior s in switchObjs)
+            {
+                int id = s.GetComponent<AutoID>().id;
+                if (switchStates.ContainsKey(id) && switchStates[id]) //has an entry and it is set to switch from default.
+                {
+                    s.preFlipped = true;
+                }
+            }
+
+            //get all collectibles
+            PowerUpBehavior[] powerupObjs = GameObject.FindObjectsOfType<PowerUpBehavior>();
+            foreach(PowerUpBehavior pow in powerupObjs)
+            {
+                AutoID aid = pow.GetComponent<AutoID>();
+                if(aid != null)
+                {
+                    int id = aid.id;
+                    if (switchStates.ContainsKey(id) && switchStates[id]) //has an entry and it is set to collected
+                    {
+                        Destroy(pow.gameObject); //EXTERMINATE
+                    }
+                }
+            }
+        }
+        else //no record so we must create a fresh one.
+        {
+            //make empty record
+            Dictionary<int, bool> switchStates = new Dictionary<int, bool>();
+            //get all AutoID carriers
+            AutoID[] trackedObjs = GameObject.FindObjectsOfType<AutoID>();
+            foreach (AutoID someObj in trackedObjs)
+            {
+                if (someObj.enabled)
+                {
+                    Debug.Log(someObj.transform.root.name + " " + someObj.id);
+                    switchStates.Add(someObj.id, false); //set all to false, ie no change from default
+                }
+            }
+
+            //add record to master dictionary
+            InteractedItems.Add(scene.name, switchStates);
+        }
+    }
+
+    public void flipItemState(int id)
+    {
+        InteractedItems[UnityEngine.SceneManagement.SceneManager.GetActiveScene().name][id] ^= true;
+    }
+
+    public void Respawn()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
     //unused, let ai of player character query the control history.

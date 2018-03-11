@@ -6,6 +6,7 @@ public class DoorSwitchBehavior : MonoBehaviour {
 
     public GameObject[] doors;
     public float cooldown;
+    public bool preFlipped = false;
 
     private Animator myAnim;
     private float timer;
@@ -13,6 +14,11 @@ public class DoorSwitchBehavior : MonoBehaviour {
     void Start()
     {
         myAnim = GetComponent<Animator>();
+
+        if(preFlipped)
+        {
+            ToggleSwitch(false);
+        }
     }
 
     void Update()
@@ -23,7 +29,7 @@ public class DoorSwitchBehavior : MonoBehaviour {
         }
     }
 
-    public bool ToggleSwitch()
+    public bool ToggleSwitch(bool notifyPlayer = true)
     {
         if (timer <= 0)
         {
@@ -34,6 +40,12 @@ public class DoorSwitchBehavior : MonoBehaviour {
                 if (d != null)
                 {
                     d.ToggleDoors();
+                    PlayerController pc = GameObject.FindObjectOfType<PlayerController>();
+                    AutoID myID = GetComponent<AutoID>();
+                    if(pc!=null && myID != null && notifyPlayer)
+                    {
+                        pc.flipItemState(myID.id);
+                    }
                 }
             }
             myAnim.SetTrigger("Toggle");

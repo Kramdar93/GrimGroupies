@@ -30,7 +30,10 @@ public class AIController : MonoBehaviour {
     public GameObject chargePositionU;
     public GameObject chargePositionD;
     public GameObject aura;
+    public Color frenziedColor;
+    public Color controlledColor;
 
+    public string defaultTag;
     
     public bool isPlayerControlled = false;
     private Rigidbody2D myRB2;
@@ -60,6 +63,7 @@ public class AIController : MonoBehaviour {
     private bool justInteracted = false;
     private bool justPlayed = false;
     private List<GameObject> targets;
+    private GameObject closest;
 
     private float stepDelay = .25f;
     private float stepTimer = 0;
@@ -156,6 +160,7 @@ public class AIController : MonoBehaviour {
                 {
                     if (waitTimer <= 0)
                     {
+                        findTargets();
                         SetInput();
                     }
                     else //still waiting, set everything to no input
@@ -195,7 +200,6 @@ public class AIController : MonoBehaviour {
                     HandleMovement();
                     HandleInteract();
                     HandleAttack();
-
                 }
             }
             else
@@ -207,13 +211,25 @@ public class AIController : MonoBehaviour {
                 }
                 else
                 {
-                    myAnim.SetBool("isDying", false); //RISE
-
-                    if (!justPlayed)
+                    if (player.transform.root.gameObject == transform.root.gameObject)
                     {
-                        //ploy noise
-                        audioMan.playSFX("getUp", transform.position);
-                        justPlayed = true;
+                        if (!justPlayed)
+                        {
+                            myAnim.SetBool("isDying", false); //RISE
+                            player.Respawn();
+                            justPlayed = true;
+                        }
+                    }
+                    else
+                    {
+                        myAnim.SetBool("isDying", false); //RISE
+
+                        if (!justPlayed)
+                        {
+                            //ploy noise
+                            audioMan.playSFX("getUp", transform.position);
+                            justPlayed = true;
+                        }
                     }
                 }
 
@@ -223,7 +239,7 @@ public class AIController : MonoBehaviour {
         }
 	}
 
-    void SetInput()
+    void findTargets()
     {
         targets.Clear();
         //try to get people to attack
@@ -245,10 +261,11 @@ public class AIController : MonoBehaviour {
             }
         }
 
+        //if we have any targets, find closest
         if(targets.Count > 0)
         {
             isWandering = false; //no time to waste, we have targets to attack!
-            GameObject closest = targets[0]; 
+            closest = targets[0]; 
             foreach(GameObject go in targets)
             {
                 if(Vector2.Distance(go.transform.position, gameObject.transform.position) < Vector2.Distance(closest.transform.position, gameObject.transform.position))
@@ -256,19 +273,18 @@ public class AIController : MonoBehaviour {
                     closest = go;
                 }
             }
+        }
+        else
+        {
+            //no targets, set closest to null
+            closest = null;
+        }
+    }
 
-            //ifNeed to move
-            if (Vector2.Distance(closest.transform.position, transform.position)
-                > Mathf.Max(mySprite.bounds.extents.x, mySprite.bounds.extents.y) + 0.1f)
-            {
-                //set walk direction
-                dirInput = closest.transform.position - gameObject.transform.position;
-            }
-            else
-            {
-                dirInput = Vector2.zero;
-            }
-
+    void SetInput()
+    {
+        if(closest != null)
+        {
             //set attack
             if(Vector2.Distance(closest.transform.position, transform.position) < attackRange) //in Range, try to attack
             {
@@ -280,13 +296,28 @@ public class AIController : MonoBehaviour {
                 {
                     attackInstanceTimer = Random.Range(minAttackTime, maxAttackTime);
                     attackDelayTimer = attackInstanceTimer + attackDelay;
+                    isAttacking = false; //try to reset attack
                 }
-                else
+                else //attack timer finished, delay has not. probably safer to switch the conditions
+                {
+                    isAttacking = false;
+                }
+
+                //in range so don't need to move
+                dirInput = Vector2.zero;
+            }
+            else //else not in range, no attack.
+            {
+                //set walk direction
+                dirInput = closest.transform.position - gameObject.transform.position;
+
+                //allow attack to continue to wait to close in, but not forever.
+                //specifically: longer than a normal attack but not ending after we have a chance at another attack.
+                if(attackDelayTimer <= 0)
                 {
                     isAttacking = false;
                 }
             }
-            //else not in range, no attack.
         }
         else
         {
@@ -309,6 +340,7 @@ public class AIController : MonoBehaviour {
                 }
             }
         }
+        //Debug.Log(name + " isAttacking: " +isAttacking + " at time " + Time.time);
     }
 
     void GetInput()
@@ -360,6 +392,16 @@ public class AIController : MonoBehaviour {
         else //move slower while attacking
         {
             myRB2.velocity = dirInput.normalized * moveSpeed;
+        }
+
+        //adjust minions to help grouping
+        if(isPlayerControlled && player.gameObject != gameObject && dirInput.magnitude > 0)
+        {
+            Vector2 playerDelta = player.transform.position - transform.position;
+            if (playerDelta.magnitude > 1)
+            {
+                myRB2.velocity += playerDelta.normalized;
+            }
         }
 
         //handle movement animations
@@ -541,10 +583,14 @@ public class AIController : MonoBehaviour {
             }
             else //projectile character
             {
-                //try to get input direction
-                if (dirInput.magnitude > 0)
+                //try to set attack direction to target
+                if (closest != null)
                 {
-                    attackDirection = new Vector3(dirInput.x, dirInput.y, 0).normalized;
+                    attackDirection = (closest.transform.position - transform.position).normalized;
+                }
+                else if(dirInput.magnitude > 0)
+                {
+                    attackDirection = dirInput.normalized;
                 }
 
                 GameObject go = Instantiate(projectile, transform.position, Quaternion.FromToRotation(projectile.transform.right, attackDirection));
@@ -565,7 +611,7 @@ public class AIController : MonoBehaviour {
                 else //charged attack
                 {
                     pb.damage = Mathf.RoundToInt(baseDamage * chargeMultiplier);
-                    pb.init(attackDirection * arrowSpeed * chargeMultiplier);
+                    pb.init(attackDirection * arrowSpeed * (chargeMultiplier / 2));
                 }
             }
 
@@ -610,6 +656,7 @@ public class AIController : MonoBehaviour {
             {
                 //cancel attack only on death
                 CancelAttack();
+                isWandering = false;
 
                 //grieve
                 currentHealth = 0;
@@ -617,18 +664,17 @@ public class AIController : MonoBehaviour {
                 respawnTimer = baseRespawnDelay;
                 myAnim.SetBool("isDying", true);
                 myAnim.SetTrigger("Die");
+                setTags(defaultTag); //reset tag
+                aura.GetComponent<SpriteRenderer>().enabled = false;
+                aura.GetComponent<SpriteRenderer>().color = controlledColor;
             }
 
             if (isPlayerControlled && player.transform.root.gameObject != gameObject) //we're not the player but under control so frenzy
             {
-                isPlayerControlled = false;
-                aura.GetComponent<SpriteRenderer>().enabled = false;
+                isPlayerControlled = false; 
+                aura.GetComponent<SpriteRenderer>().color = frenziedColor;
                 //untag
-                tag = "Baddie";
-                foreach(Transform child in transform)
-                {
-                    child.tag = tag;
-                }
+                setTags("Frenzied");
             }
 
             if(player.gameObject == gameObject)
@@ -646,6 +692,7 @@ public class AIController : MonoBehaviour {
             myAnim.SetBool("isDying", false);
             isPlayerControlled = true;
             aura.GetComponent<SpriteRenderer>().enabled = true;
+            aura.GetComponent<SpriteRenderer>().color = controlledColor;
             //retag
             tag = "Goodie";
             foreach (Transform child in transform)
@@ -670,5 +717,19 @@ public class AIController : MonoBehaviour {
     public void setWaitTimer()
     {
         waitTimer = afterHitDelay;
+    }
+
+    private void setTags(string t)
+    {
+        tag = t;
+        foreach (Transform child in transform)
+        {
+            child.tag = tag;
+        }
+    }
+
+    public void quickenRespawn()
+    {
+        respawnTimer = 0;
     }
 }

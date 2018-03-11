@@ -7,6 +7,11 @@ public class SimpleTextPopper : MonoBehaviour {
     public Sprite[] font; //yeah I know this is dumb but I can't get it do work dynamically.
     public float spacing;
 
+    void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     //creates a gameobject from strings.
     public void MakePopup(float posx, float posy, string[] text, GameObject parent)
     {

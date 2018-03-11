@@ -12,9 +12,9 @@ public class AudioManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        source = new GameObject("source", typeof(AudioSource)).GetComponent<AudioSource>();
-        source.transform.parent = transform;
-        
+        //only need one
+        DontDestroyOnLoad(gameObject);
+        source = GetComponentInChildren<AudioSource>();
 	}
 
     public void playSFX(string s, Vector3 pos)

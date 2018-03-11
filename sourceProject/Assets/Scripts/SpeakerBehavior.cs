@@ -5,11 +5,15 @@ using UnityEngine;
 public class SpeakerBehavior : MonoBehaviour {
 
     public string[] oneTimer;
+    public string[] onSuccess;
     public ArrayWrapper[] randomRepeats;
     public float cooldown;
     public Vector2 pos;
     public bool lastOne;
-    public bool givesObj;
+    public int givesObjNumber = -1;
+    public int objPrerequisite = -1;
+    public Sprite spriteOnReapeat = null;
+    public bool deleteOnRepeat = false;
 
     private float timer = 0;
     private SimpleTextPopper textPopper;
@@ -57,20 +61,53 @@ public class SpeakerBehavior : MonoBehaviour {
     {
         if (isFirstTime && timer <=0 )
         {
-            textPopper.MakePopup(textPosition.transform.position.x + pos.x, textPosition.transform.position.y + pos.y, oneTimer);
-            timer = cooldown;
-            isFirstTime = false;
-            if (givesObj)
+            //get pc ref
+            PlayerController pc = GameObject.FindObjectOfType<PlayerController>();
+            //check prereqs
+            if (givesObjNumber >= 0)
             {
-                GameObject.FindObjectOfType<PlayerController>().objectives += 1;
+                if (pc.objectives[givesObjNumber] >= objPrerequisite)
+                {
+                    //pop success message
+                    textPopper.MakePopup(textPosition.transform.position.x + pos.x, textPosition.transform.position.y + pos.y, onSuccess);
+                    timer = cooldown;
+                    //record progress
+                    isFirstTime = false;
+                    pc.objectives[givesObjNumber] += 1;
+                }
+                else
+                {
+                    //pop first time text again to remind player.
+                    textPopper.MakePopup(textPosition.transform.position.x + pos.x, textPosition.transform.position.y + pos.y, oneTimer);
+                    timer = cooldown;
+                }
+            }
+            else //no connected objective, just progress
+            {
+                //pop text
+                textPopper.MakePopup(textPosition.transform.position.x + pos.x, textPosition.transform.position.y + pos.y, oneTimer);
+                timer = cooldown;
+                isFirstTime = false;
             }
             return true;
         }
         else if (timer <= 0)
         {
+            if (deleteOnRepeat)
+            {
+                //increment again to remember it's picked up
+                if (givesObjNumber >= 0)
+                {
+                    GameObject.FindObjectOfType<PlayerController>().objectives[givesObjNumber] += 1;
+                }
+                //now delete us
+                GameObject.Destroy(gameObject);
+                //not sure if this will still execute after deletion but return just in case as to not hit any following code.
+                return true;
+            }
             //check win condidition
             PlayerController pc = GameObject.FindObjectOfType<PlayerController>();
-            if (pc.objectives >= 3)
+            if (givesObjNumber == 0 && pc.objectives[givesObjNumber] >= 3)
             {
                 pc.showEnd();
             }

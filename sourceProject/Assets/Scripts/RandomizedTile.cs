@@ -12,9 +12,5 @@ public class RandomizedTile : MonoBehaviour {
         int index = Random.Range(0, acceptableTiles.Length);
         sr.sprite = acceptableTiles[index];
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpBehavior : MonoBehaviour {
 
-    public int healthIncrease, heal;
+    public int healthIncrease, heal, pupID;
     public GameObject newPlayerObj;
     public GameObject replaceWith;
 
@@ -33,6 +33,9 @@ public class PowerUpBehavior : MonoBehaviour {
                 GameObject newgo = Instantiate(newPlayerObj, oldGo.transform.position, Quaternion.identity);
                 AIController newai = newgo.GetComponent<AIController>();
 
+                //make new host persistent
+                DontDestroyOnLoad(newgo);
+
                 //copy over relavent values
                 newai.maxHealth = pcai.maxHealth;
                 //newai.currentHealth = pcai.maxHealth;  //lolbabbymoad
@@ -57,6 +60,13 @@ public class PowerUpBehavior : MonoBehaviour {
             if(replaceWith !=null)
             {
                 Instantiate(replaceWith, transform.position, Quaternion.identity);
+            }
+
+            //log collection if we're tracked
+            AutoID myID = GetComponent<AutoID>();
+            if(myID != null)
+            {
+                pc.flipItemState(myID.id);
             }
             
             //finally remove yourself
