@@ -1,0 +1,3590 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "ToBuildDependencies": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.UnityAdditionalFile.txt",
+      "DisplayName": "Writing Unity.Multiplayer.Center.Common.UnityAdditionalFile.txt",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 116,
+      "PayloadLength": 48,
+      "PayloadDebugContentSnippet": "/home/mark/code/unity/GrimGrou",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.UnityAdditionalFile.txt"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp",
+      "DisplayName": "Writing Unity.Multiplayer.Center.Common.rsp",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 266,
+      "PayloadLength": 31385,
+      "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp2",
+      "DisplayName": "Writing Unity.Multiplayer.Center.Common.rsp2",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 31754,
+      "PayloadLength": 61,
+      "PayloadDebugContentSnippet": "/pathmap:\"/home/mark/code/unit",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp2"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 3
+    },
+    {
+      "Annotation": "Csc Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll (+2 others)",
+      "DisplayName": "Compiling C# (Unity.Multiplayer.Center.Common)",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetCoreRuntime/dotnet\" exec \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/DotNetSdkRoslyn/csc.dll\" /nostdlib /noconfig /shared \"@Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp\" \"@Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp2\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HierarchyCoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputForUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MarshallingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MultiplayerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/AnswerData.cs",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/IOnboardingSection.cs",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/IOnboardingSectionAnalyticsProvider.cs",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/Preset.cs",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/SelectedSolutionsData.cs",
+        "Library/PackageCache/com.unity.multiplayer.center/Common/StyleConstants.cs",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.rsp"
+      ],
+      "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.pdb",
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.ref.dll"
+      ],
+      "OutputFlags": [
+        0,
+        0,
+        0
+      ],
+      "ToBuildDependencies": [
+        1,
+        2,
+        3,
+        78
+      ],
+      "ToUseDependencies": [
+        1,
+        3
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [
+        {
+          "Key": "DOTNET_MULTILEVEL_LOOKUP",
+          "Value": "0"
+        }
+      ],
+      "CachingMode": "ByDirectInputs",
+      "DebugActionIndex": 4
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_59A5C72ABBD04DA0.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_59A5C72ABBD04DA0.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_59A5C72ABBD04DA0.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 5
+    },
+    {
+      "Annotation": "ScriptAssemblies",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "ToBuildDependencies": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        83,
+        86,
+        87,
+        88,
+        89
+      ],
+      "DebugActionIndex": 6
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_4C41590FC474D5BA.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_4C41590FC474D5BA.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_4C41590FC474D5BA.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 7
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_B4F258C79435E35E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_B4F258C79435E35E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_B4F258C79435E35E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 8
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_7379A07C5D7EB5E0.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_7379A07C5D7EB5E0.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_7379A07C5D7EB5E0.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 9
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_B1F44B2504F0490E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_B1F44B2504F0490E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_B1F44B2504F0490E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 10
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_7F3168537A079ED2.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_7F3168537A079ED2.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_7F3168537A079ED2.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 11
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E619C54E54247DB6.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E619C54E54247DB6.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E619C54E54247DB6.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 12
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_A6BCC54D8C958848.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_A6BCC54D8C958848.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_A6BCC54D8C958848.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 13
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_E1309027621EA839.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_E1309027621EA839.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_E1309027621EA839.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 14
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_4B0AA465D372F0FB.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_4B0AA465D372F0FB.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_4B0AA465D372F0FB.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 15
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_40CF49641F6A0BF7.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_40CF49641F6A0BF7.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_40CF49641F6A0BF7.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 16
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_0494028C5D7A3FEF.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_0494028C5D7A3FEF.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_0494028C5D7A3FEF.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 17
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_8C63AC8ECEBEF0F5.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_8C63AC8ECEBEF0F5.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_8C63AC8ECEBEF0F5.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 18
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_87124B255C5E1FD4.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_87124B255C5E1FD4.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_87124B255C5E1FD4.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 19
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_F1E21038577F35BA.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_F1E21038577F35BA.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_F1E21038577F35BA.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 20
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_DF3FA2E25A76D44F.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_DF3FA2E25A76D44F.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_DF3FA2E25A76D44F.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 21
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_933ACA1E8D1E7062.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_933ACA1E8D1E7062.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_933ACA1E8D1E7062.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 22
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_1E40655237BEA1EE.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_1E40655237BEA1EE.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_1E40655237BEA1EE.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 23
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_C35BF5EA33222EB0.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_C35BF5EA33222EB0.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HierarchyCoreModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HierarchyCoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_C35BF5EA33222EB0.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 24
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_F4C25E8238B1D162.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_F4C25E8238B1D162.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_F4C25E8238B1D162.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 25
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B79107BA403932B3.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B79107BA403932B3.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B79107BA403932B3.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 26
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_4D228DD7E443602D.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_4D228DD7E443602D.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_4D228DD7E443602D.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 27
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_E1F1FCFBBA97710B.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_E1F1FCFBBA97710B.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputForUIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputForUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_E1F1FCFBBA97710B.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 28
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_433966439CE1FEFF.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_433966439CE1FEFF.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_433966439CE1FEFF.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 29
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E5A73003F03FC376.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E5A73003F03FC376.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E5A73003F03FC376.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 30
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_AC58E24BC3B03644.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_AC58E24BC3B03644.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_AC58E24BC3B03644.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 31
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_E5098FA024117B41.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_E5098FA024117B41.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_E5098FA024117B41.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 32
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_5A5CE9B9E9187660.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_5A5CE9B9E9187660.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MarshallingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MarshallingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_5A5CE9B9E9187660.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 33
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_319C67B1BDB7D686.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_319C67B1BDB7D686.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MultiplayerModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MultiplayerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_319C67B1BDB7D686.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 34
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_57A64BD8CB8BCB7D.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_57A64BD8CB8BCB7D.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_57A64BD8CB8BCB7D.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 35
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_1A6668BC270D57B6.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_1A6668BC270D57B6.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_1A6668BC270D57B6.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 36
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_C01F906CFE7BAD75.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_C01F906CFE7BAD75.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_C01F906CFE7BAD75.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 37
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_967EC38100F537E3.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_967EC38100F537E3.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_967EC38100F537E3.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 38
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_0C7AE220CD62388B.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_0C7AE220CD62388B.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_0C7AE220CD62388B.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 39
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_D9DBC936F027883E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_D9DBC936F027883E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_D9DBC936F027883E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 40
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_C6408FD0D81C62A6.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_C6408FD0D81C62A6.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_C6408FD0D81C62A6.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 41
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_486443E389A2695E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_486443E389A2695E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_486443E389A2695E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 42
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_D133CCAD5B715B7D.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_D133CCAD5B715B7D.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_D133CCAD5B715B7D.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 43
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_C86C15727BE669C9.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_C86C15727BE669C9.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_C86C15727BE669C9.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 44
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_CB55787FBA928118.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_CB55787FBA928118.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_CB55787FBA928118.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 45
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_280E8DCCAD066D1E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_280E8DCCAD066D1E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_280E8DCCAD066D1E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 46
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_04B9A215F8596B2C.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_04B9A215F8596B2C.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_04B9A215F8596B2C.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 47
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_33197BD44A2E51DC.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_33197BD44A2E51DC.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_33197BD44A2E51DC.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 48
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_77D9726F271657F7.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_77D9726F271657F7.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_77D9726F271657F7.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 49
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_B0C53EEFD6B380D1.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_B0C53EEFD6B380D1.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_B0C53EEFD6B380D1.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 50
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_5820F4ABE4CEC60A.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_5820F4ABE4CEC60A.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_5820F4ABE4CEC60A.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 51
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_17AB1C869948DB95.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_17AB1C869948DB95.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_17AB1C869948DB95.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 52
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_5F9352F828CC94B3.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_5F9352F828CC94B3.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_5F9352F828CC94B3.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 53
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_EF8001DB8F53E29B.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_EF8001DB8F53E29B.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_EF8001DB8F53E29B.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 54
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_4FC1A670EE7061DA.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_4FC1A670EE7061DA.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_4FC1A670EE7061DA.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 55
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_3757DD3C4D5A8DD3.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_3757DD3C4D5A8DD3.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_3757DD3C4D5A8DD3.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 56
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_551965581817534C.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_551965581817534C.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_551965581817534C.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 57
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FA06146C072E4A45.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FA06146C072E4A45.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FA06146C072E4A45.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 58
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_B5A5260040F5F614.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_B5A5260040F5F614.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_B5A5260040F5F614.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 59
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_7745BCA277B31D79.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_7745BCA277B31D79.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_7745BCA277B31D79.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 60
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_147FD446D595B62D.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_147FD446D595B62D.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_147FD446D595B62D.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 61
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_A69641ADCD92A7CD.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_A69641ADCD92A7CD.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_A69641ADCD92A7CD.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 62
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_F1CEDF1DD905A2BB.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_F1CEDF1DD905A2BB.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_F1CEDF1DD905A2BB.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 63
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_73F8984E7D8B330A.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_73F8984E7D8B330A.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_73F8984E7D8B330A.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 64
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_9262BC9AAD78224E.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_9262BC9AAD78224E.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_9262BC9AAD78224E.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 65
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_5EC19581EF37FAAC.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_5EC19581EF37FAAC.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_5EC19581EF37FAAC.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 66
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_87AA2632DDD62DE3.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_87AA2632DDD62DE3.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_87AA2632DDD62DE3.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 67
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_2A559854188C511F.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_2A559854188C511F.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_2A559854188C511F.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 68
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_F8B80ADDFD83C164.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_F8B80ADDFD83C164.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_F8B80ADDFD83C164.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 69
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_A7EB8BDDB9D1D8C4.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_A7EB8BDDB9D1D8C4.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_A7EB8BDDB9D1D8C4.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 70
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_FED544A4D687EF6F.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_FED544A4D687EF6F.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_FED544A4D687EF6F.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 71
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A43AECBE3C99BA77.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A43AECBE3C99BA77.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A43AECBE3C99BA77.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 72
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_4E439059490277D5.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_4E439059490277D5.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_4E439059490277D5.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 73
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_B71E248CB0A08A60.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_B71E248CB0A08A60.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_B71E248CB0A08A60.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 74
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_DAAA4EE2430C2622.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_DAAA4EE2430C2622.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_DAAA4EE2430C2622.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 75
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.dll_52B240CA5FC93BEE.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/UnityEngine.dll_52B240CA5FC93BEE.mvfrm\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.dll\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.dll_52B240CA5FC93BEE.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 76
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm.rsp",
+      "DisplayName": "Writing Unity.Multiplayer.Center.Common.dll.mvfrm.rsp",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 31927,
+      "PayloadLength": 6118,
+      "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm.rsp"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 77
+    },
+    {
+      "Annotation": "MovedFromExtractor-Combine Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm\" \"@Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm.rsp\"",
+      "Inputs": [
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_59A5C72ABBD04DA0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_4C41590FC474D5BA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_B4F258C79435E35E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_7379A07C5D7EB5E0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_B1F44B2504F0490E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_7F3168537A079ED2.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E619C54E54247DB6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_A6BCC54D8C958848.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_E1309027621EA839.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_4B0AA465D372F0FB.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_40CF49641F6A0BF7.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_0494028C5D7A3FEF.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_8C63AC8ECEBEF0F5.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_87124B255C5E1FD4.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_F1E21038577F35BA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_DF3FA2E25A76D44F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_933ACA1E8D1E7062.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_1E40655237BEA1EE.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_C35BF5EA33222EB0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_F4C25E8238B1D162.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B79107BA403932B3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_4D228DD7E443602D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_E1F1FCFBBA97710B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_433966439CE1FEFF.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E5A73003F03FC376.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_AC58E24BC3B03644.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_E5098FA024117B41.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_5A5CE9B9E9187660.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_319C67B1BDB7D686.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_57A64BD8CB8BCB7D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_1A6668BC270D57B6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_C01F906CFE7BAD75.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_967EC38100F537E3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_0C7AE220CD62388B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_D9DBC936F027883E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_C6408FD0D81C62A6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_486443E389A2695E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_D133CCAD5B715B7D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_C86C15727BE669C9.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_CB55787FBA928118.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_280E8DCCAD066D1E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_04B9A215F8596B2C.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_33197BD44A2E51DC.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_77D9726F271657F7.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_B0C53EEFD6B380D1.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_5820F4ABE4CEC60A.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_17AB1C869948DB95.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_5F9352F828CC94B3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_EF8001DB8F53E29B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_4FC1A670EE7061DA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_3757DD3C4D5A8DD3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_551965581817534C.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FA06146C072E4A45.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_B5A5260040F5F614.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_7745BCA277B31D79.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_147FD446D595B62D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_A69641ADCD92A7CD.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_F1CEDF1DD905A2BB.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_73F8984E7D8B330A.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_9262BC9AAD78224E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_5EC19581EF37FAAC.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_87AA2632DDD62DE3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_2A559854188C511F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_F8B80ADDFD83C164.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_A7EB8BDDB9D1D8C4.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_FED544A4D687EF6F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A43AECBE3C99BA77.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_4E439059490277D5.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_B71E248CB0A08A60.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_DAAA4EE2430C2622.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.dll_52B240CA5FC93BEE.mvfrm",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm.rsp"
+      ],
+      "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "ToBuildDependencies": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 78
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.UnityAdditionalFile.txt",
+      "DisplayName": "Writing Assembly-CSharp.UnityAdditionalFile.txt",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 38151,
+      "PayloadLength": 48,
+      "PayloadDebugContentSnippet": "/home/mark/code/unity/GrimGrou",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.UnityAdditionalFile.txt"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 79
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp",
+      "DisplayName": "Writing Assembly-CSharp.rsp",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 38285,
+      "PayloadLength": 31479,
+      "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 80
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp2",
+      "DisplayName": "Writing Assembly-CSharp.rsp2",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 69851,
+      "PayloadLength": 0,
+      "PayloadDebugContentSnippet": "",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp2"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 81
+    },
+    {
+      "Annotation": "Csc Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll (+2 others)",
+      "DisplayName": "Compiling C# (Assembly-CSharp)",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetCoreRuntime/dotnet\" exec \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/DotNetSdkRoslyn/csc.dll\" /nostdlib /noconfig /shared \"@Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp\" \"@Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp2\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ContentLoadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HierarchyCoreModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputForUIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MarshallingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.MultiplayerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.PropertiesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreFontEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreTextEngineModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityCurlModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.VirtualTexturingModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.ref.dll",
+        "Assets/Scripts/AIController.cs",
+        "Assets/Scripts/AudioManager.cs",
+        "Assets/Scripts/DestroySelf.cs",
+        "Assets/Scripts/DoorBehavior.cs",
+        "Assets/Scripts/DoorSwitchBehavior.cs",
+        "Assets/Scripts/ExplosionBehavior.cs",
+        "Assets/Scripts/GGCameraBehavior.cs",
+        "Assets/Scripts/PlayerController.cs",
+        "Assets/Scripts/PowerUpBehavior.cs",
+        "Assets/Scripts/ProjectileBehavior.cs",
+        "Assets/Scripts/RandomizedTile.cs",
+        "Assets/Scripts/SimpleTextPopper.cs",
+        "Assets/Scripts/SpeakerBehavior.cs",
+        "Assets/Scripts/TextPop.cs",
+        "Assets/Scripts/TryAIRevive.cs",
+        "Assets/Scripts/zfixer.cs",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.rsp"
+      ],
+      "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.pdb",
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.ref.dll"
+      ],
+      "OutputFlags": [
+        0,
+        0,
+        0
+      ],
+      "ToBuildDependencies": [
+        4,
+        79,
+        80,
+        81,
+        85
+      ],
+      "ToUseDependencies": [
+        79,
+        81
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [
+        {
+          "Key": "DOTNET_MULTILEVEL_LOOKUP",
+          "Value": "0"
+        }
+      ],
+      "DebugActionIndex": 82
+    },
+    {
+      "Annotation": "MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Common.ref.dll_B91F1DB406B9E45D.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Common.ref.dll_B91F1DB406B9E45D.mvfrm\" \"Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.ref.dll\"",
+      "Inputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.ref.dll",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll"
+      ],
+      "InputFlags": [
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Common.ref.dll_B91F1DB406B9E45D.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "ToBuildDependencies": [
+        4
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 83
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp",
+      "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 69947,
+      "PayloadLength": 6210,
+      "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 84
+    },
+    {
+      "Annotation": "MovedFromExtractor-Combine Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm",
+      "DisplayName": "Checking for moved APIs",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll\" \"Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm\" \"@Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp\"",
+      "Inputs": [
+        "Library/Bee/artifacts/mvdfrm/Unity.Multiplayer.Center.Common.ref.dll_B91F1DB406B9E45D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_59A5C72ABBD04DA0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_4C41590FC474D5BA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_B4F258C79435E35E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_7379A07C5D7EB5E0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_B1F44B2504F0490E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_7F3168537A079ED2.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E619C54E54247DB6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_A6BCC54D8C958848.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_E1309027621EA839.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_4B0AA465D372F0FB.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_40CF49641F6A0BF7.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_0494028C5D7A3FEF.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_8C63AC8ECEBEF0F5.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_87124B255C5E1FD4.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_F1E21038577F35BA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_DF3FA2E25A76D44F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_933ACA1E8D1E7062.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_1E40655237BEA1EE.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_C35BF5EA33222EB0.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_F4C25E8238B1D162.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B79107BA403932B3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_4D228DD7E443602D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_E1F1FCFBBA97710B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_433966439CE1FEFF.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E5A73003F03FC376.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_AC58E24BC3B03644.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_E5098FA024117B41.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_5A5CE9B9E9187660.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_319C67B1BDB7D686.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_57A64BD8CB8BCB7D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_1A6668BC270D57B6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_C01F906CFE7BAD75.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_967EC38100F537E3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_0C7AE220CD62388B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_D9DBC936F027883E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_C6408FD0D81C62A6.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_486443E389A2695E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_D133CCAD5B715B7D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_C86C15727BE669C9.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_CB55787FBA928118.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_280E8DCCAD066D1E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_04B9A215F8596B2C.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_33197BD44A2E51DC.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_77D9726F271657F7.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_B0C53EEFD6B380D1.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_5820F4ABE4CEC60A.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_17AB1C869948DB95.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_5F9352F828CC94B3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_EF8001DB8F53E29B.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_4FC1A670EE7061DA.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_3757DD3C4D5A8DD3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_551965581817534C.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FA06146C072E4A45.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_B5A5260040F5F614.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_7745BCA277B31D79.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_147FD446D595B62D.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_A69641ADCD92A7CD.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_F1CEDF1DD905A2BB.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_73F8984E7D8B330A.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_9262BC9AAD78224E.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_5EC19581EF37FAAC.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_87AA2632DDD62DE3.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_2A559854188C511F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_F8B80ADDFD83C164.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_A7EB8BDDB9D1D8C4.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_FED544A4D687EF6F.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A43AECBE3C99BA77.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_4E439059490277D5.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_B71E248CB0A08A60.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_DAAA4EE2430C2622.mvfrm",
+        "Library/Bee/artifacts/mvdfrm/UnityEngine.dll_52B240CA5FC93BEE.mvfrm",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/Compilation/ApiUpdater/ApiUpdater.MovedFromExtractor.dll",
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp"
+      ],
+      "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll.mvfrm"
+      ],
+      "OutputFlags": [
+        0
+      ],
+      "ToBuildDependencies": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        83,
+        84
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 85
+    },
+    {
+      "Annotation": "CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll",
+      "DisplayName": "Copying Unity.Multiplayer.Center.Common.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        4
+      ],
+      "DebugActionIndex": 86
+    },
+    {
+      "Annotation": "CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.pdb",
+      "DisplayName": "Copying Unity.Multiplayer.Center.Common.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Unity.Multiplayer.Center.Common.pdb"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.pdb"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        4
+      ],
+      "DebugActionIndex": 87
+    },
+    {
+      "Annotation": "CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+      "DisplayName": "Copying Assembly-CSharp.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        82
+      ],
+      "DebugActionIndex": 88
+    },
+    {
+      "Annotation": "CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb",
+      "DisplayName": "Copying Assembly-CSharp.pdb",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/2400b0aP.dag/Assembly-CSharp.pdb"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        82
+      ],
+      "DebugActionIndex": 89
+    },
+    {
+      "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)",
+      "DisplayName": "Extracting script serialization layouts",
+      "Action": "\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/mark/code/unity/GrimGroupies/sourceProject/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/mark/code/unity/GrimGroupies/sourceProject/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/EditorExtensions\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/mark/code/unity/GrimGroupies/sourceProject/Library/Bee/PlayerScriptAssemblies\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
+      "Inputs": [
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/netcorerun/netcorerun",
+        "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll"
+      ],
+      "InputFlags": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Outputs": [
+        "Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json",
+        "Library/BuildPlayerData/Player/TypeDb-All.json"
+      ],
+      "OutputFlags": [
+        0,
+        0
+      ],
+      "ToBuildDependencies": [
+        86,
+        88
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 90
+    },
+    {
+      "Annotation": "ScriptAssembliesAndTypeDB",
+      "DisplayName": null,
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [],
+      "OutputFlags": [],
+      "ToBuildDependencies": [
+        6,
+        90
+      ],
+      "DebugActionIndex": 91
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
+    },
+    {
+      "File": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline/UnityEditor.iOS.Extensions.Xcode.dll"
+    },
+    {
+      "File": "Library/Bee/2400b0aP-inputdata.json"
+    }
+  ],
+  "StatSignatures": [
+    {
+      "File": "Assets/csc.rsp"
+    },
+    {
+      "File": "Assets/mcs.rsp"
+    },
+    {
+      "File": "Library/Bee/2400b0aP-inputdata.json"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.multiplayer.center/Common/csc.rsp"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "/home/mark/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".pdb",
+    ".json"
+  ],
+  "StructuredLogFileName": "Library/Bee/tundra.log.json",
+  "StateFileName": "Library/Bee/TundraBuildState.state",
+  "StateFileNameTmp": "Library/Bee/TundraBuildState.state.tmp",
+  "StateFileNameMapped": "Library/Bee/TundraBuildState.state.map",
+  "ScanCacheFileName": "Library/Bee/tundra.scancache",
+  "ScanCacheFileNameTmp": "Library/Bee/tundra.scancache.tmp",
+  "DigestCacheFileName": "Library/Bee/tundra.digestcache",
+  "DigestCacheFileNameTmp": "Library/Bee/tundra.digestcache.tmp",
+  "CachedNodeOutputDirectoryName": "Library/Bee/CachedNodeOutput",
+  "EmitDataForBeeWhy": 0,
+        "NamedNodes": {
+          "all_tundra_nodes": 0,
+          "ScriptAssemblies": 6,
+          "ScriptAssembliesAndTypeDB": 91
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "Library/Bee/2400b0aP.dag.json",
+  "PayloadsFile": "/home/mark/code/unity/GrimGroupies/sourceProject/Library/Bee/2400b0aP.dag.payloads",
+  "RelativePathToRoot": "../.."
+}

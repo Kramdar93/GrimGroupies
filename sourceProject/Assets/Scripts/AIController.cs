@@ -218,7 +218,7 @@ public class AIController : MonoBehaviour {
                 }
 
                 //make sure the bodies don't slide around, good for a laugh though
-                myRB2.velocity = Vector2.zero;
+                myRB2.linearVelocity = Vector2.zero;
             }
         }
 	}
@@ -354,12 +354,12 @@ public class AIController : MonoBehaviour {
     {
         if (isAttacking || isWandering)
         {
-            myRB2.velocity = dirInput.normalized * moveSpeed * 0.5f;
+            myRB2.linearVelocity = dirInput.normalized * moveSpeed * 0.5f;
             
         }
         else //move slower while attacking
         {
-            myRB2.velocity = dirInput.normalized * moveSpeed;
+            myRB2.linearVelocity = dirInput.normalized * moveSpeed;
         }
 
         //handle movement animations

@@ -18,7 +18,7 @@ public class ProjectileBehavior : MonoBehaviour {
 
     public void init(Vector2 initvel)
     {
-        myRB2.velocity = initvel;
+        myRB2.linearVelocity = initvel;
         initialVelocity =  initvel;
         rotation = transform.rotation;
         GameObject.FindObjectOfType<AudioManager>().playSFX("bow", transform.position);
@@ -56,7 +56,7 @@ public class ProjectileBehavior : MonoBehaviour {
         {
             //ignore and reset to originals
             Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
-            myRB2.velocity = initialVelocity;
+            myRB2.linearVelocity = initialVelocity;
             myRB2.angularVelocity = 0;
             transform.rotation = rotation;
         }

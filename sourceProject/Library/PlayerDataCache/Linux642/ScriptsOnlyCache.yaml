@@ -1,0 +1,207 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - AIController
+    - AudioManager
+    - DestroySelf
+    - DoorBehavior
+    - DoorSwitchBehavior
+    - ExplosionBehavior
+    - GGCameraBehavior
+    - PlayerController
+    - PowerUpBehavior
+    - ProjectileBehavior
+    - RandomizedTile
+    - SimpleTextPopper
+    - SpeakerBehavior
+    - TryAIRevive
+    - zfixer
+  serializedClasses:
+    Assembly-CSharp:
+    - .SpeakerBehavior/ArrayWrapper
+  methodsToPreserve: []
+  sceneClasses:
+    Assets/Scenes/LabyrinthHeart.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1540}
+    - Class: 114
+      Script: {instanceID: 1542}
+    - Class: 114
+      Script: {instanceID: 1544}
+    - Class: 114
+      Script: {instanceID: 1546}
+    - Class: 114
+      Script: {instanceID: 1550}
+    - Class: 114
+      Script: {instanceID: 1552}
+    - Class: 114
+      Script: {instanceID: 1554}
+    - Class: 114
+      Script: {instanceID: 1556}
+    - Class: 114
+      Script: {instanceID: 17932}
+    - Class: 114
+      Script: {instanceID: 17938}
+    - Class: 114
+      Script: {instanceID: 17960}
+    - Class: 114
+      Script: {instanceID: 17978}
+    - Class: 114
+      Script: {instanceID: 18018}
+    - Class: 114
+      Script: {instanceID: 18020}
+    - Class: 114
+      Script: {instanceID: 18024}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 231
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 146c6b4b651680ffc50b12b5d7baab2d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: f6cef24fd5ccc9bcc7de14bc5ff8f2e4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ProjectileBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: c008b6de1185dd6c80ed119c15adbf43
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AIController
+  - hash:
+      serializedVersion: 2
+      Hash: 542caa468a8305faa4a1d0458d0a74d3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExplosionBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 560e8db16e398d2960c104e729701acd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TextPop
+  - hash:
+      serializedVersion: 2
+      Hash: bd1c7effe27a67c23dde7b58b431c8bd
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SpeakerBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 71b2f3555266a7ab525749497435b2b1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: cebf4b61e1119e57a7b57826e2bff03c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PowerUpBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: d768af4dce04c2c415927dedfd7cc25a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SimpleTextPopper
+  - hash:
+      serializedVersion: 2
+      Hash: 1191809e5400bdea8dc71cddd8d5af82
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RandomizedTile
+  - hash:
+      serializedVersion: 2
+      Hash: 8a4e4987e5cc14de3dbe8ca044a93ba0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DoorBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 73c2f706f63639d4ced4c3c3ea5766cf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TryAIRevive
+  - hash:
+      serializedVersion: 2
+      Hash: 7bb4bf6c1da15b2d4d00aae494de11b1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GGCameraBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: c376dcd49df90584704ca4e0ca6f7fad
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DoorSwitchBehavior
+  - hash:
+      serializedVersion: 2
+      Hash: 139aa4b526520fa297a1361b2fa6d582
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: zfixer
+  - hash:
+      serializedVersion: 2
+      Hash: 29b4a9dc92a051981f2fc999e89f2540
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DestroySelf
+  platform: 24
+  scenePathNames:
+  - Assets/Scenes/LabyrinthHeart.unity
+  playerPath: /home/mark/code/unity/GrimGroupies/builds/GrimGroupies.x86_64
